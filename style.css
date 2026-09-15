@@ -1,0 +1,303 @@
+head {
+background-color: transparent;
+}
+body {
+    background-color: red !important;
+}
+.button2 {
+    position: fixed;
+    top: 13px;
+    left: 200px;
+    background: none;
+    border: none;
+    font-size: xx-large;
+    cursor: pointer;
+    color:black;
+    z-index:2000;
+}
+.button2:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.button3:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.Settings {
+    position: fixed;
+    top: 13px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: xx-large;
+    cursor: pointer;
+    color:black;
+    z-index:2000;
+ 
+}
+.app{
+   height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    position: absolute;
+
+    top: 20px;
+    left: 20px;
+
+    width: 100%;
+
+    background-color: transparent;
+
+    overflow: hidden;
+
+    max-height: 0;
+
+    transition: max-height 0.4s ease;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding-left: 20px;
+    z-index: 0;
+}
+.menu button{
+    font-family: 'Intel One Mono', monospace;
+    font-size: medium;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 999px;
+    padding: 10px 20px;
+    color:white;
+    box-shadow:0px 8px 10px rgba(0,0,0,0.2);
+    top: 100px;
+    padding-left: 50px;   
+    width: 350px;
+    height: 60px;
+    line-height: 0px;
+    padding:0px;
+    
+}
+.menu button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.menu input{
+    font-family: 'Intel One Mono', monospace;
+    font-size: medium;
+    display:flex;
+    
+    
+}
+.img{
+    position: absolute;
+    left: 196px;
+    top: 150px;
+    margin: 0;
+    transform: none;
+    width: 50%;
+    max-width: 600px;
+    z-index: 2;
+    display: block;
+    
+}
+
+.container{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 70vw;
+    max-width: 700px;
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    
+}
+
+.circle{
+
+    position: absolute;
+    overflow: hidden;
+    width: 70vw;
+    height: 70vw;
+
+    max-width: 700px;
+    max-height: 700px;
+    border: black solid 2px;
+     z-index: 1;
+        border-radius: 50%;
+
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+.water {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 0%;
+
+    background-color: #007af9;
+    z-index: 1;
+
+    transition: height 0.8s ease;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+
+    width: 100%;
+    height: 200px;
+
+    background: url(images/waves6.png);
+    background-size: 400px 200px;
+    background-repeat: repeat-x;
+
+    animation: flow 10000ms linear infinite;
+
+    z-index: 2;
+    transition: bottom 0.8s ease;
+}
+
+@keyframes flow{
+    0% {
+        background-position: -1200px 0;
+    }
+    100% {
+        background-position: 400px 0;
+    }
+}
+
+.menu.active {
+    max-height: 300px;
+    background-color: transparent;
+    text-align: center;
+    padding: 25px;
+    z-index: 0;
+}
+
+body{
+    overflow: hidden;
+height: 100%;
+    font-family: 'Intel One Mono', monospace;
+    text-align: center;
+    
+    
+   background-image: url("images/background.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    
+    
+
+}
+.was{
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 999px;
+    padding: 20px 40px;
+    display: inline-block; 
+    color:rgb(255, 255, 255);
+     box-shadow:0px 8px 10px rgba(0,0,0,0.2);
+     z-index: 1;
+     margin-top: 60px;
+   
+}
+.Button {
+    background-color: transparent;
+    margin-top: 250px;
+    font-family: 'Intel One Mono', monospace;
+    font-size: xx-large;
+    padding: 20px 40px;
+    border: 2px solid black;
+    border-radius: 999px;
+    box-shadow:0px 8px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color:white;
+    position: fixed;   
+
+}
+.Button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.button3 {
+   background-color: transparent;
+    margin-top: 675px;
+    font-family: 'Intel One Mono', monospace;
+    font-size: x-large;
+    padding: 20px 40px;
+    border: 2px solid black;
+    border-radius: 999px;
+    box-shadow:0px 8px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color:white;
+    position: fixed;   
+}
+.ladebalken {
+    color: white;
+    font-family: 'Intel One Mono', monospace;
+    font-size: large;
+    
+   margin-top: 700px; 
+}
+
+progress {
+    
+    width: 600px;
+    height: 25px;
+    border-radius: 999px;
+    overflow: hidden;
+    appearance: none;
+    -webkit-appearance: none;
+    
+    
+}
+
+progress::-webkit-progress-bar {
+    background-color: transparent;
+    border-radius: 999px;
+    border: 2px solid black;
+    
+}
+
+progress::-webkit-progress-value {
+    background-color: #0070fd;
+    border-radius: 999px;
+   
+}
+
+progress::-moz-progress-bar {
+    background-color: #0070fd;
+    border-radius: 999px;
+    
+}
+

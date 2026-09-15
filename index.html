@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <button class ="Settings" onclick="toggleMenu()">⚙️</button>
+    <div class ="menu" id="menu">
+        <button id="threshhold" class="menubutton">Bewässerungsschwelle ändern</button>
+        
+    </div>
+    <script>
+        function toggleMenu(){
+            document.getElementById("menu").classList.toggle("active");
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bodenfeuchtigkeitmesser</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <main>
+  
+</main>
+     
+  <body>
+    <main class ="app">
+      
+        <div class ="circle"> <div id = "water" class="water"></div> 
+         <div id="wave"  class="wave"></div></div>
+        
+        <h1 id="feuchtigkeit" class="was">0%</h1>  
+
+        <link class="img" href="https://fonts.google.com/specimen/Intel+One+Mono?utm_source=chatgpt.com&preview.script=Latn" rel="stylesheet">
+        <div class = "container" >
+
+            
+            
+            <img class="img"src="images/pflanze5.png" alt="Pflanze">  
+            
+        </div> 
+    
+    <button id="button" class="Button">Bodenfeuchtigkeit messen</button>
+        <button id="button2" class ="button2"></button>
+        <button id="button3" class ="button3">Starten</button>
+     <h1 id="wasserstand" class="ladebalken">Wasserstand:</h1>
+    <progress id="progress" value="0" max="100"></progress>
+    </main>
+    <script src="script.js"></script>
+  </body>
+  <!---->g
+</html>
